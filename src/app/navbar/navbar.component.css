@@ -1,0 +1,69 @@
+.nav-link{
+  font-weight: 500;font-size: 25px;
+  color: white;
+  margin: auto;
+  font-family: Oswald;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  height: 100px;
+  padding-top: 0;
+  text-align: center;
+  margin-top: 0;
+}
+#about{
+  color: white;
+}
+#zoobargrill{
+  color: white;
+}
+#hustler{
+  color: white;
+}
+#corporate{
+  color: white;
+}
+#nightclub{
+  color: white;
+}
+#functionevent{
+  color: white;
+}
+#contact{
+  color: white;
+}
+
+.listofnavbar{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 35px;
+}
+.listofnavbar:hover{
+  background: rgba(200,200,200,0.8);
+  height: 100px;
+}
+.listofnavbar:hover #about{
+  color: black;
+}
+.listofnavbar:hover #zoobargrill{
+  color: black;
+}
+.listofnavbar:hover #hustler{
+   color: black;
+ }
+.listofnavbar:hover #corporate{
+  color: black;
+}
+.listofnavbar:hover #nightclub{
+  color: black;
+}
+.listofnavbar:hover #functionevent{
+  color: black;
+}
+.listofnavbar:hover #contact{
+  color: black;
+}
+
+.navbar{
+  margin-top: 0;
+  padding-top: 0;
+}
