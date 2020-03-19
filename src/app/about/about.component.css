@@ -1,0 +1,7 @@
+
+.bigwording{
+  font-size: 3.7vw;text-align: center;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;
+}
+.smallwording{
+  font-size: 1.4vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
+}
