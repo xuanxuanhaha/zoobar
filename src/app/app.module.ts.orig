@@ -6,15 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import {RouterModule} from '@angular/router';
+<<<<<<< HEAD
 import { ContactComponent } from './contact/contact.component';
+=======
 import { FooterComponent } from './footer/footer.component';
+>>>>>>> f7866cf03400e50026a51fb27e89689436462358
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AboutComponent,
-    ContactComponent,
+<<<<<<< HEAD
+    ContactComponent
+=======
     FooterComponent
+>>>>>>> f7866cf03400e50026a51fb27e89689436462358
   ],
   imports: [
     BrowserModule,
