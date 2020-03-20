@@ -1,0 +1,31 @@
+.parallax-wrapper{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vh;
+  box-sizing: border-box;
+}
+.parallax-wrapper::before{
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: url("./../../assets/AboutPage/home-first-image-horse.jpg");
+  position: absolute;
+  z-index: -1;
+  background-size: 100% 100%;
+}
+.regular-wrapper{
+  margin-top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20vh;
+  background-image: url("./../../assets/AboutPage/home-second-rightbottom.jpg");
+  background-size: 100% 100%;
+}
+.content{
+  margin: 0;
+  padding: 50px;
+  width: 50%;
+  background: #aaa;
+}
