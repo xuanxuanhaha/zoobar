@@ -42,7 +42,7 @@ export class AboutComponent implements OnInit {
           });
           console.log('> 2');
         }
-        if(window.scrollY > screen.height + 200){
+        if(window.scrollY > screen.height + 300){
           document.getElementById('fixed-top').style.display = 'none';
           document.getElementById('fixed-top2').style.display = 'none';
           document.getElementById('fixed-top3').style.display = 'none';
@@ -98,6 +98,29 @@ export class AboutComponent implements OnInit {
 
     document.getElementById('fixed-top5').style.marginTop = (Number(a) - 550) + 'px';
 
+
+
+    if(window.scrollY < screen.height / 2){
+      document.getElementById('fixed-top').style.display = 'inline';
+      document.getElementById('fixed-top2').style.display = 'none';
+      document.getElementById('fixed-top3').style.display = 'none';
+      document.getElementById('fixed-top4').style.display = 'none';
+      document.getElementById('fixed-top5').style.display = 'none';
+    }
+    if(window.scrollY > screen.height / 2 && window.scrollY < screen.height + 40) {
+      document.getElementById('fixed-top').style.display = 'none';
+      document.getElementById('fixed-top2').style.display = 'inline';
+      document.getElementById('fixed-top3').style.display = 'inline';
+      document.getElementById('fixed-top4').style.display = 'inline';
+      document.getElementById('fixed-top5').style.display = 'inline';
+    }
+    if(window.scrollY > screen.height + 300){
+      document.getElementById('fixed-top').style.display = 'none';
+      document.getElementById('fixed-top2').style.display = 'none';
+      document.getElementById('fixed-top3').style.display = 'none';
+      document.getElementById('fixed-top4').style.display = 'none';
+      document.getElementById('fixed-top5').style.display = 'none';
+    }
   }
 
 }
