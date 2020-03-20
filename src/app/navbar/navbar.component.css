@@ -11,6 +11,9 @@
   text-align: center;
   margin-top: 0;
 }
+.row{
+  margin: auto;
+}
 #about{
   color: white;
   background: transparent;height: 100px;padding-top: 40px;
@@ -74,4 +77,8 @@
 .navbar{
   margin-top: 0;
   padding-top: 0;
+  z-index: 1000;background: rgba(100,100,100,0.7);height: 100px;margin-bottom: 0
+}
+.navbar-nav{
+  height:100px;padding-top:0px
 }
