@@ -29,7 +29,7 @@
 /*  background-attachment: fixed;*/
 /*  height: 1000px;*/
 /*}*/
-.second-image-background{
+#second-image-background{
   background-image:
     url("./../../assets/AboutPage/home-second-lefttop.jpg"),
     url("./../../assets/AboutPage/home-second-righttop.jpg"),
@@ -56,3 +56,4 @@
     bottom 0px left 0px,
     bottom 0px right 0px;
 }
+
