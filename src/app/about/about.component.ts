@@ -12,7 +12,9 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     window.scrollTo(0, 0);
-
+    console.log(screen.height);
+    const a = screen.height.toString();
+    document.getElementById('first-image-background').style.height = a + 'px';
   }
 
 }
