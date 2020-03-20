@@ -1,5 +1,6 @@
 .nav-link{
-  font-weight: 500;font-size: 1.5vw;
+  font-weight: 500;
+  font-size: 1.5vw;
   color: white;
   margin: auto;
   font-family: Oswald;
@@ -12,34 +13,41 @@
 }
 #about{
   color: white;
+  background: transparent;height: 100px;padding-top: 40px;
 }
 #zoobargrill{
   color: white;
+  background: transparent;height: 100px;padding-top: 40px;
 }
 #hustler{
   color: white;
+  background: transparent;height: 100px;padding-top: 40px;
 }
 #corporate{
   color: white;
+  background: transparent;height: 100px;padding-top: 40px;
 }
 #nightclub{
   color: white;
+  background: transparent;height: 100px;padding-top: 40px;
 }
 #functionevent{
   color: white;
+  background: transparent;height: 100px;padding-top: 40px;
 }
 #contact{
   color: white;
+  background: transparent;height: 100px;padding-top: 40px;
 }
 
 .listofnavbar{
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 35px;
+
 }
 .listofnavbar:hover{
   background: rgba(200,200,200,0.8);
-  height: 100px;
+  height: auto;
 }
 .listofnavbar:hover #about{
   color: black;
