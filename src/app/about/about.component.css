@@ -3,5 +3,57 @@
   font-size: 3.7vw;text-align: center;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;
 }
 .smallwording{
-  font-size: 1.4vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
+  font-size: 1.5vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
 }
+#first-image-background {
+  background-image: url("./../../assets/AboutPage/home-first-image-horse.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+/*.second-left-top {*/
+/*  background-image: url("./../../assets/AboutPage/home-second-lefttop.jpg");*/
+/*  background-size: 50%;*/
+/*  -webkit-background-size: 50%;*/
+/*  background-repeat: no-repeat;*/
+/*  background-attachment: fixed;*/
+/*  height: 1000px;*/
+/*}*/
+/*.second-right-top {*/
+/*  background-image: url("./../../assets/AboutPage/home-second-righttop.jpg");*/
+/*  background-size: 50%;*/
+/*  -webkit-background-size: 50%;*/
+/*  background-repeat: no-repeat;*/
+/*  background-attachment: fixed;*/
+/*  height: 1000px;*/
+/*}*/
+#second-image-background{
+  background-image:
+    url("./../../assets/AboutPage/home-second-lefttop.jpg"),
+    url("./../../assets/AboutPage/home-second-righttop.jpg"),
+    url("./../../assets/AboutPage/home-second-leftbottom.JPG"),
+    url("./../../assets/AboutPage/home-second-rightbottom.jpg");
+
+  background-size:
+    50% 60%,
+    50% 40%,
+    50% 40%,
+    50% 60%;
+  -webkit-background-size:
+    50% 60%,
+    50% 40%,
+    50% 40%,
+    50% 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width:100%;
+  height: 1000px;
+  background-position:
+    top 0px left 0px,
+    top 0px right 0px,
+    bottom 0px left 0px,
+    bottom 0px right 0px;
+}
+
