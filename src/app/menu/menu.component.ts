@@ -12,9 +12,9 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
 
     window.scrollTo(0, 0);
-    const elmnt = document.getElementById('menumain');
-    const txt = 'Height with padding and border: ' + elmnt.offsetHeight + 'px';
-    console.log(txt);
+    // const elmnt = document.getElementById('menumain');
+    // const txt = 'Height with padding and border: ' + elmnt.offsetHeight + 'px';
+    // console.log(txt);
     // document.getElementById('menusame').style.height = document.getElementById('menumain').offsetHeight + 'pv';
   }
 
