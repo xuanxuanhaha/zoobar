@@ -9,6 +9,8 @@ import {RouterModule} from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ZoobargrillComponent } from './zoobargrill/zoobargrill.component';
+import { FunctionEventComponent } from './function-event/function-event.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { ZoobargrillComponent } from './zoobargrill/zoobargrill.component';
     AboutComponent,
     ContactComponent,
     FooterComponent,
-    ZoobargrillComponent
+    ZoobargrillComponent,
+    FunctionEventComponent
   ],
   imports: [
     BrowserModule,
