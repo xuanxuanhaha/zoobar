@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ZoobargrillComponent } from './zoobargrill/zoobargrill.component';
 import { FunctionEventComponent } from './function-event/function-event.component';
+import { NightclubComponent } from './nightclub/nightclub.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FunctionEventComponent } from './function-event/function-event.componen
     ContactComponent,
     FooterComponent,
     ZoobargrillComponent,
-    FunctionEventComponent
+    FunctionEventComponent,
+    NightclubComponent
   ],
   imports: [
     BrowserModule,
