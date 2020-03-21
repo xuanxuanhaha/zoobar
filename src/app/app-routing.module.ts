@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {ZoobargrillComponent} from './zoobargrill/zoobargrill.component';
 import {MenuComponent} from './menu/menu.component';
 import {NightclubComponent} from './nightclub/nightclub.component';
+import {DrinkComponent} from './drink/drink.component';
 
 const routes: Routes = [
   {path: '', component: AboutComponent},
@@ -15,7 +16,7 @@ const routes: Routes = [
   {path: 'zoobargrill', component: ZoobargrillComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'nightclub', component: NightclubComponent},
-  
+  {path: 'drink', component: DrinkComponent}
 ];
 @NgModule({
   imports: [
