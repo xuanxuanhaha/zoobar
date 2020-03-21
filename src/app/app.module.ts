@@ -8,13 +8,15 @@ import { AboutComponent } from './about/about.component';
 import {RouterModule} from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { FunctionEventComponent } from './function-event/function-event.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    FunctionEventComponent
   ],
   imports: [
     BrowserModule,
