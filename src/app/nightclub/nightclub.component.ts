@@ -8,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class NightclubComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

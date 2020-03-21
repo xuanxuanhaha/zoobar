@@ -5,13 +5,15 @@ import {AboutComponent} from './about/about.component';
 import {ContactComponent} from './contact/contact.component';
 import {FormsModule} from '@angular/forms';
 import {ZoobargrillComponent} from './zoobargrill/zoobargrill.component';
-
+import {NightclubComponent} from './nightclub/nightclub.component';
 
 const routes: Routes = [
   {path: '', component: AboutComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'zoobargrill', component: ZoobargrillComponent}
+  {path: 'zoobargrill', component: ZoobargrillComponent},
+  {path: 'nightclub', component: NightclubComponent},
+  
 ];
 @NgModule({
   imports: [
