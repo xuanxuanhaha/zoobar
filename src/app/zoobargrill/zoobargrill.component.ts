@@ -11,15 +11,17 @@ export class ZoobargrillComponent implements OnInit {
 
   ngOnInit() {
     window.scrollTo(0, 0);
-    console.log(screen.height);
-    const b = screen.height;
-    const a = screen.height.toString();
-    const c = 150;
-    document.getElementById('greencontent').style.height = (c * 33.3 / 100) + 'vh';
-    document.getElementById('greencontent').style.marginTop = (- (c * 40 / 100 / 3) + 'vh');
+    // console.log(screen.height);
+    // const b = screen.height;
+    // const a = screen.height.toString();
+    // const c = 150;
+    // document.getElementById('greencontent').style.height = (c * 33.3 / 100) + 'vh';
+    // document.getElementById('greencontent').style.marginTop = (- (c * 40 / 100 / 3) + 'vh');
+    //
+    //
+    // document.getElementById('greencontent2').style.height = (c * 33 / 100) + 'vh';
+    //
 
-
-    document.getElementById('greencontent2').style.height = (c * 33 / 100) + 'vh';
   }
 
 }
