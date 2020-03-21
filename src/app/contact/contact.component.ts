@@ -13,12 +13,12 @@ export class ContactComponent implements OnInit {
   customerSubject: any = '';
   customerMessage: any = '';
 
-  nameShow: any = false;
+  nameShow: any = true;
   emailShow: any = false;
   mobileShow: any = false;
   invalidEmail: any = false;
   enquiryMessageShow: any = false;
-  bigErrorShow: any = false;
+  bigErrorShow: any = true;
 
   constructor() { }
 

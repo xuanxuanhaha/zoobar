@@ -60,7 +60,7 @@
             <!-- MAP AREA -->
             <div class="mapouter">
                 <div class="gmap_canvas">
-                    <iframe width="800" height="500" id="gmap_canvas" 
+                    <iframe width="750" height="500" id="gmap_canvas" 
                     src="https://maps.google.com/maps?q=zoobar+and+gril&oq=zoobar+and+gril&aqs=chrome..69i57j0l7.2697j0j7&sourceid=chrome&ie=UTF-8&iwloc=&output=embed" 
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <a href="https://www.embedgooglemap.net/blog/elementor-review/"></a>
@@ -103,7 +103,7 @@
             </div>
             <div class="message_box">
                 <textarea placeholder="Message" (ngModel)="customerMessage" class="text_area_box"
-                rows="10">
+                rows="10" cols="0">
                 </textarea>
                 <div [hidden]="!enquiryMessageShow" class="error_message">
                     This field is required
@@ -119,6 +119,7 @@
             </div>
         </div>
     </div>
+    <div class="empty_space"></div>
   
     <div class="footer_section">
         <app-footer></app-footer>
