@@ -8,13 +8,15 @@ import { AboutComponent } from './about/about.component';
 import {RouterModule} from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ZoobargrillComponent } from './zoobargrill/zoobargrill.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ZoobargrillComponent
   ],
   imports: [
     BrowserModule,
