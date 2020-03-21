@@ -89,7 +89,7 @@
 .menugreeneat{
   width: 50%;
   height: 120vh;
-  /*object-fit: cover;*/
+  object-fit: cover;
   padding: 0;
   margin: 0;
 }
