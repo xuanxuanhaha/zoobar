@@ -13,6 +13,7 @@ import { FunctionEventComponent } from './function-event/function-event.componen
 import { NightclubComponent } from './nightclub/nightclub.component';
 import { MenuComponent } from './menu/menu.component';
 import { DrinkComponent } from './drink/drink.component';
+import { HustlerComponent } from './hustler/hustler.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { DrinkComponent } from './drink/drink.component';
     FunctionEventComponent,
     NightclubComponent,
     MenuComponent,
-    DrinkComponent
+    DrinkComponent,
+    HustlerComponent
   ],
   imports: [
     BrowserModule,
