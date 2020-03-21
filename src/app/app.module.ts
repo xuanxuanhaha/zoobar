@@ -8,14 +8,10 @@ import { AboutComponent } from './about/about.component';
 import {RouterModule} from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-<<<<<<< HEAD
 import { ZoobargrillComponent } from './zoobargrill/zoobargrill.component';
 import { FunctionEventComponent } from './function-event/function-event.component';
 import { NightclubComponent } from './nightclub/nightclub.component';
-
-=======
-import { FunctionEventComponent } from './function-event/function-event.component';
->>>>>>> d4e305f7f69eb3c3546e71acaff7e34a225e2a7d
+import { MenuComponent } from './menu/menu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,13 +19,10 @@ import { FunctionEventComponent } from './function-event/function-event.componen
     AboutComponent,
     ContactComponent,
     FooterComponent,
-<<<<<<< HEAD
     ZoobargrillComponent,
     FunctionEventComponent,
-    NightclubComponent
-=======
-    FunctionEventComponent
->>>>>>> d4e305f7f69eb3c3546e71acaff7e34a225e2a7d
+    NightclubComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
