@@ -1,12 +1,12 @@
 .parallax-wrapper{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding-top: 20vh;
   box-sizing: border-box;
 }
 .parallax-wrapper::before{
   content: "";
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
 }
 .regular-wrapper{
   margin-top: 0;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   padding-top: 20vh;
   background-image:
@@ -35,7 +35,7 @@
 }
 .regular-wrapper1{
   margin-top: 0;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   padding-top: 20vh;
   background-image:
@@ -78,23 +78,23 @@
   font-size: 1.5vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
 }
 .three {
-  width:67vw;
+  width:66.666%;
   height:50vh;
   object-fit:cover;
 }
 .one{
-  width: 33vw;
+  width: 33.333%;
   height: 50vh;
   object-fit: cover;
 }
 .two{
-  width: 33vw;
+  width: 33.333%;
   height: 50vh;
   object-fit: cover;
 }
 
 .big{
-  width: 99vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
 }
