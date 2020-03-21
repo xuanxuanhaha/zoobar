@@ -71,23 +71,28 @@
   color: white;
   margin-left: 30px;
 }
-.bigwording{
+.title{
   font-size: 3.7vw;text-align: center;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;
 }
-.smallwording{
+.contentwords{
   font-size: 1.5vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
 }
-.three {
+.secondrightphoto {
   width:66.666%;
   height:50vh;
   object-fit:cover;
 }
-.one{
+.thirdleftphoto{
+  width:66.666%;
+  height:50vh;
+  object-fit:cover;
+}
+.firstleftphoto{
   width: 33.333%;
   height: 50vh;
   object-fit: cover;
 }
-.two{
+.firstrightphoto{
   width: 33.333%;
   height: 50vh;
   object-fit: cover;
