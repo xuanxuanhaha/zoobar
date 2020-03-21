@@ -24,4 +24,8 @@ export class NavbarComponent implements OnInit {
     this.router.navigateByUrl('/contact');
   }
 
+  goToNightClub() {
+    this.router.navigateByUrl('/nightclub');
+  }
+
 }
