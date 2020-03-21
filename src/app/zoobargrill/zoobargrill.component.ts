@@ -14,12 +14,12 @@ export class ZoobargrillComponent implements OnInit {
     console.log(screen.height);
     const b = screen.height;
     const a = screen.height.toString();
-    document.getElementById('first-image-background').style.height = a + 'px';
-    document.getElementById('second-image-background').style.height = a + 'px';
-    document.getElementById('third-image-background').style.height = a + 'px';
-    document.getElementById('greenbox').style.height = Number(a) / 2 + 'px';
-    document.getElementById('greenbox').style.width = '35%';
-    document.getElementById('third-image-background1').style.marginTop = a + 'px';
+    const c = 150;
+    document.getElementById('greencontent').style.height = (c * 33.3 / 100) + 'vh';
+    document.getElementById('greencontent').style.marginTop = (- (c * 40 / 100 / 3) + 'vh');
+
+
+    document.getElementById('greencontent2').style.height = (c * 33 / 100) + 'vh';
   }
 
 }
