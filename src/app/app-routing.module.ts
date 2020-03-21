@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {ZoobargrillComponent} from './zoobargrill/zoobargrill.component';
 import {MenuComponent} from './menu/menu.component';
 import {NightclubComponent} from './nightclub/nightclub.component';
+import {FunctionEventComponent} from './function-event/function-event.component'; 
 
 const routes: Routes = [
   {path: '', component: AboutComponent},
@@ -15,7 +16,7 @@ const routes: Routes = [
   {path: 'zoobargrill', component: ZoobargrillComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'nightclub', component: NightclubComponent},
-  
+  {path: 'function-event', component: FunctionEventComponent}
 ];
 @NgModule({
   imports: [

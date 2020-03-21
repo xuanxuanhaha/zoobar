@@ -12,4 +12,7 @@ export class FunctionEventComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  goToContact() {
+  }
+
 }
