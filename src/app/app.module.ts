@@ -14,6 +14,7 @@ import { NightclubComponent } from './nightclub/nightclub.component';
 import { MenuComponent } from './menu/menu.component';
 import { DrinkComponent } from './drink/drink.component';
 import { HustlerComponent } from './hustler/hustler.component';
+import { CorporateComponent } from './corporate/corporate.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { HustlerComponent } from './hustler/hustler.component';
     NightclubComponent,
     MenuComponent,
     DrinkComponent,
-    HustlerComponent
+    HustlerComponent,
+    CorporateComponent
   ],
   imports: [
     BrowserModule,
