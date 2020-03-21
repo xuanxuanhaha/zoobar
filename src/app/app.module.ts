@@ -12,6 +12,7 @@ import { ZoobargrillComponent } from './zoobargrill/zoobargrill.component';
 import { FunctionEventComponent } from './function-event/function-event.component';
 import { NightclubComponent } from './nightclub/nightclub.component';
 import { MenuComponent } from './menu/menu.component';
+import { DrinkComponent } from './drink/drink.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { MenuComponent } from './menu/menu.component';
     ZoobargrillComponent,
     FunctionEventComponent,
     NightclubComponent,
-    MenuComponent
+    MenuComponent,
+    DrinkComponent
   ],
   imports: [
     BrowserModule,
