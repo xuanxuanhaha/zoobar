@@ -22,7 +22,19 @@
         </div>
         <div class="second_section">
             <div class="second_first_half">
-                <img src="./../../assets/function_event/IMG_6723.jpg" class="tower_image"> 
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+                    <ng-template ngbSlide *ngFor="let img of images; index as i">
+                        <!--  Description for images can be added here -->
+                        <div class="carousel-caption">
+                            <h3></h3>
+                        </div>
+                        <!-- End of description-->
+                        <div class="pics">
+                            <img [src]="img"  class="tower_image" 
+                            alt="Birthday Party">
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
             </div>
             <div class="second_second_half">
                 <div class="second_second_first_row">

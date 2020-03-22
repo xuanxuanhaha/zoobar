@@ -12,6 +12,7 @@ import { ZoobargrillComponent } from './zoobargrill/zoobargrill.component';
 import { FunctionEventComponent } from './function-event/function-event.component';
 import { NightclubComponent } from './nightclub/nightclub.component';
 import { MenuComponent } from './menu/menu.component';
+import { NgbCarousel, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +23,12 @@ import { MenuComponent } from './menu/menu.component';
     ZoobargrillComponent,
     FunctionEventComponent,
     NightclubComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

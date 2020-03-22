@@ -28,4 +28,8 @@ export class NavbarComponent implements OnInit {
     this.router.navigateByUrl('/nightclub');
   }
 
+  goToFunction() {
+    this.router.navigateByUrl('/function-event');
+  }
+
 }
