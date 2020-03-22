@@ -16,6 +16,7 @@ import { NgbCarousel, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DrinkComponent } from './drink/drink.component';
 import { HustlerComponent } from './hustler/hustler.component';
 import { CorporateComponent } from './corporate/corporate.component';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { CorporateComponent } from './corporate/corporate.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
