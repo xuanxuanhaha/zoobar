@@ -8,15 +8,21 @@ import {ZoobargrillComponent} from './zoobargrill/zoobargrill.component';
 import {MenuComponent} from './menu/menu.component';
 import {NightclubComponent} from './nightclub/nightclub.component';
 import {FunctionEventComponent} from './function-event/function-event.component'; 
+import {DrinkComponent} from './drink/drink.component';
+import {HustlerComponent} from './hustler/hustler.component';
+import {CorporateComponent} from './corporate/corporate.component';
 
 const routes: Routes = [
   {path: '', component: AboutComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'zoobargrill', component: ZoobargrillComponent},
+  {path: 'overview', component: ZoobargrillComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'nightclub', component: NightclubComponent},
-  {path: 'function-event', component: FunctionEventComponent}
+  {path: 'function-event', component: FunctionEventComponent},
+  {path: 'drink', component: DrinkComponent},
+  {path: 'hustler', component: HustlerComponent},
+  {path: 'corporate', component: CorporateComponent}
 ];
 @NgModule({
   imports: [

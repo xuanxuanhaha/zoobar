@@ -13,6 +13,9 @@ import { FunctionEventComponent } from './function-event/function-event.componen
 import { NightclubComponent } from './nightclub/nightclub.component';
 import { MenuComponent } from './menu/menu.component';
 import { NgbCarousel, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DrinkComponent } from './drink/drink.component';
+import { HustlerComponent } from './hustler/hustler.component';
+import { CorporateComponent } from './corporate/corporate.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +27,9 @@ import { NgbCarousel, NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FunctionEventComponent,
     NightclubComponent,
     MenuComponent,
+    DrinkComponent,
+    HustlerComponent,
+    CorporateComponent
   ],
   imports: [
     BrowserModule,

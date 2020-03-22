@@ -1,12 +1,12 @@
 .parallax-wrapper{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding-top: 20vh;
   box-sizing: border-box;
 }
 .parallax-wrapper::before{
   content: "";
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
 }
 .regular-wrapper{
   margin-top: 0;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   padding-top: 20vh;
   background-image:
@@ -35,7 +35,7 @@
 }
 .regular-wrapper1{
   margin-top: 0;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   padding-top: 20vh;
   background-image:
@@ -71,30 +71,36 @@
   color: white;
   margin-left: 30px;
 }
-.bigwording{
+.title{
   font-size: 3.7vw;text-align: center;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;
 }
-.smallwording{
+.contentwords{
   font-size: 1.5vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
+  font-weight: 400;
 }
-.three {
-  width:67vw;
+.secondrightphoto {
+  width:66.666%;
   height:50vh;
   object-fit:cover;
 }
-.one{
-  width: 33vw;
-  height: 50vh;
-  object-fit: cover;
+.thirdleftphoto{
+  width:66.666%;
+  height:50vh;
+  object-fit:cover;
 }
-.two{
-  width: 33vw;
-  height: 50vh;
-  object-fit: cover;
+.firstleftphoto{
+  width:33.333%;
+  height:50vh;
+  object-fit:cover;
+}
+.firstrightphoto{
+  width:33.333%;
+  height:50vh;
+  object-fit:cover;
 }
 
 .big{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
 }

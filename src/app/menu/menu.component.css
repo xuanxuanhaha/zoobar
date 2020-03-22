@@ -1,12 +1,12 @@
 .parallax-wrapper{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding-top: 20vh;
   box-sizing: border-box;
 }
 .parallax-wrapper::before{
   content: "";
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
 }
 .regular-wrapper{
   margin-top: 0;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   padding-top: 20vh;
   background-image:
@@ -35,7 +35,7 @@
 }
 .regular-wrapper1{
   margin-top: 0;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   padding-top: 20vh;
   background-image:
@@ -84,27 +84,28 @@
 }
 .smallwording{
   font-size: 1.5vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
+  font-weight: 400;
 }
 
 .menugreeneat{
-  width: 50vw;
-  height: 118vh;
+  width: 50%;
+  height: 120vh;
   object-fit: cover;
   padding: 0;
   margin: 0;
 }
-/*.menushare{*/
-/*  width: 25vw;*/
-/*  height: 100vh;*/
-/*  object-fit: cover;*/
-/*}*/
-/*.menumain {*/
-/*  width:25vw;*/
-/*  height:100vh;*/
-/*  object-fit:cover;*/
-/*}*/
+.menushare{
+  /*width: 25vw;*/
+  height: 120vh;
+  object-fit: cover;
+}
+.menumain {
+  /*width:25vw;*/
+  height:120vh;
+  object-fit:cover;
+}
 .big{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
 }
