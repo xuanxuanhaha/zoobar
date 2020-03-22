@@ -21,6 +21,8 @@
     padding: 1%;
     background-position: cover;
 }
+
+
 .actual_body {
 
 }
@@ -30,6 +32,8 @@
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    object-fit: cover;
+
 }
 
 .monkey_bg {
@@ -46,7 +50,7 @@
     position: absolute;
 }
 
-.bigwording {
+.bigwording_t {
     padding-top: 10%;
     padding-left: 10%;
     font-size: 3.2vw;
@@ -54,14 +58,13 @@
     text-shadow: 1px 1px 1px rgb(100,100,100);
 }
 
-.smallwording {
+.smallwording_t {
     padding-left: 10%;
-    padding-top: 1%;
     display: flex;
     flex-wrap: wrap;
     font-family: Roboto;
     width: 80%;
-    font-size: 1.3vw;
+    font-size: 1.9vw;
 }
 
 .contact_button {
@@ -90,18 +93,21 @@
     flex-direction: column;
     height: 100%;
     width: 30%;
+    object-fit: cover;
+
 }
 
 .tower_image {
     width: 100%;
-    height: 1000px;
+    height: 700px;
     position: inherit;
     background-position: cover;
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
+    object-fit: cover;
 }
+
 .second_second_half {
     flex-grow: 1;
     width: 70%;
@@ -114,11 +120,13 @@
     flex-wrap: wrap;
     background-image: url("./../../assets/function_event/IMG_6766.jpg");
     width: 100%;
-    height: 500px;
+    height: 350px;
     background-position: center;
-    background-size: center;
+    background-size: cover;
     -webkit-background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
+
 }
 
 .second_second_first_row_first {
@@ -137,17 +145,19 @@
 
 .second_tower_image {
     width: 100%;
-    height: 500px;
+    height: 350px;
     background-position: center;
-    background-size: center;
+    background-size: cover;
     -webkit-background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    object-fit: cover;
+
 }
 
 
 .textual_section_second {
-    width: 40%;
+    width: 30%;
     margin-top: -20px;
     height: 100%;
     background:rgba(246,80,56,1.0);
@@ -155,25 +165,228 @@
 }
 
 .bigwording_second {
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgb(100,100,100);
 }
 
 .smallwording_second {
     width: 100%;
-    font-weight: 2.0vw;
 }
 
 .shrink {
     text-align: center;
     width: 50%;
     margin-left: 25%;
+    font-weight: 2.2vw;
+
 }
 
 .contact_button_second {
     text-align: center;
     padding-top: 50px;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .second_tower_image {
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    .tower_image {
+        width: 100%;
+        height: 600px;
+        position: inherit;
+        background-position: cover;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    .textual_section_second {
+        width: 40%;
+        margin-top: -20px;
+        height: 100%;
+        background:rgba(246,80,56,1.0);
+        color: white;
+    }
+    
+    .bigwording_second {
+        padding-top: 70px;
+        text-align: center;
+        font-size: 2.5vw;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgb(100,100,100);
+    }
+
+    .second_second_first_row  {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url("./../../assets/function_event/IMG_6766.jpg");
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo_image {
+        height: 100px;
+        width:75px;
+        padding: 1%;
+        background-position: cover;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+
+
+    .textual_section {
+        padding: 1%;
+        top: 10%;
+        text-align: left;
+        width: 100%;
+        height: 200px;
+        background:  rgba(51, 61, 71,  0.5);
+        color: white;
+        position: absolute;
+    }
+
+    .bigwording_t {
+        padding-top: 5%;
+        padding-left: 20%;
+        font-size: 5.2vw;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgb(100,100,100);
+    }
+
+    h3 {
+        margin-top: -20px;
+    }
+
+    .smallwording_t {
+        padding-top: -5%;
+        padding-left: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: Roboto;
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .logo_image {
+        height: 100px;
+        width:75px;
+        padding: 1%;
+        background-position: cover;
+    }
+
+    .second_section {
+        display: block;
+    }
+
+    .second_first_half {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .tower_image {
+        width: 100%;
+        position: inherit;
+        background-position: cover;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 350px;
+    }
+
+    .second_second_half {
+        width: 100%;
+        height: 100%;
+    }
+
+    .second_second_first_row  {
+        display: block;
+        background-image: url("./../../assets/function_event/IMG_6766.jpg");
+        width: 100%;
+        height: 250px;
+        background-position: cover;
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+
+    }
+
+    .second_second_first_row_first {
+        display: block;
+    }
+
+    .second_second_first_row_second {
+        display: block;
+    }
+
+    .second_second_second_row {
+        width: 100%;
+    }
+
+    .second_tower_image {
+        width: 100%;
+        height: 250px;
+    }
+
+
+    .textual_section_second {
+        width: 100%;
+        top: 40%;
+        transform: translate(0%, 50%);
+        position: absolute;
+        height: 300px;
+        background:rgba(246,80,56,1.0);
+        color: white;
+    }
+
+    .bigwording_second {
+        padding-top: 50px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgb(100,100,100);
+    }
+
+    .smallwording_second {
+        width: 100%;
+    }
+
+    .shrink {
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+        font-weight: 2.2vw;
+
+    }
+
+    .contact_button_second {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+}
+

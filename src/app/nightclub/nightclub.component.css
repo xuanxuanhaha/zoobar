@@ -26,6 +26,8 @@
     width:150px;
     padding: 5%;
     background-position: cover;
+    object-fit: cover;
+
 }
 
 .first_image, .second_image, .third_image, .fourth_image {
@@ -46,6 +48,8 @@
         rgba(0, 0, 0, 0.45), 
         rgba(0, 0, 0, 0.45)
     );
+    object-fit: cover;
+
 }
 
 .text_words {
@@ -129,6 +133,8 @@
             rgba(0, 0, 0, 0.45), 
             rgba(0, 0, 0, 0.45)
         );
+        object-fit: cover;
+
     }
 
     
