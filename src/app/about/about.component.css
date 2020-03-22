@@ -75,7 +75,8 @@
   font-size: 3.7vw;text-align: center;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;
 }
 .contentwords{
-  font-size: 1.5vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
+  font-size: 1.6vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
+  font-weight: 300;
 }
 .secondrightphoto {
   width:66.666%;
