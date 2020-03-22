@@ -39,12 +39,10 @@ export class NavbarComponent implements OnInit {
   goToCorporate(){
     this.router.navigateByUrl('/corporate');
   }
-  goToFunction(){
+  goToFunction() {
+    this.router.navigateByUrl('/function-event');
+  }
 
-  }
-  goToMenu(){
-    this.router.navigateByUrl('/menu');
-  }
   goToDrink(){
     this.router.navigateByUrl('/drink');
   }
@@ -56,5 +54,8 @@ export class NavbarComponent implements OnInit {
   }
   goToLunch(){
 
+  }
+  goToMenu() {
+    this.router.navigateByUrl('/menu');
   }
 }

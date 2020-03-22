@@ -12,6 +12,7 @@ import { ZoobargrillComponent } from './zoobargrill/zoobargrill.component';
 import { FunctionEventComponent } from './function-event/function-event.component';
 import { NightclubComponent } from './nightclub/nightclub.component';
 import { MenuComponent } from './menu/menu.component';
+import { NgbCarousel, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DrinkComponent } from './drink/drink.component';
 import { HustlerComponent } from './hustler/hustler.component';
 import { CorporateComponent } from './corporate/corporate.component';
@@ -32,7 +33,8 @@ import { CorporateComponent } from './corporate/corporate.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
