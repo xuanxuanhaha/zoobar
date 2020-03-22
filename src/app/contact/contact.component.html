@@ -8,9 +8,9 @@
                 CONTACT US
             </div>
         </div>
-        <div class="logo_space">
-            <img class="logo_image" src="./../../assets/general/Zoo_Monogram_Gold.png" />
-        </div>
+<!--        <div class="logo_space">-->
+<!--            <img class="logo_image" src="./../../assets/general/Zoo_Monogram_Gold.png" />-->
+<!--        </div>-->
     </div>
     <div class="contact_body">
         <div class="empty_area"></div>
@@ -60,8 +60,8 @@
             <!-- MAP AREA -->
             <div class="mapouter">
                 <div class="gmap_canvas">
-                    <iframe width="750" height="500" id="gmap_canvas" 
-                    src="https://maps.google.com/maps?q=zoobar+and+gril&oq=zoobar+and+gril&aqs=chrome..69i57j0l7.2697j0j7&sourceid=chrome&ie=UTF-8&iwloc=&output=embed" 
+                    <iframe width="750" height="500" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=zoobar+and+gril&oq=zoobar+and+gril&aqs=chrome..69i57j0l7.2697j0j7&sourceid=chrome&ie=UTF-8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <a href="https://www.embedgooglemap.net/blog/elementor-review/"></a>
                 </div>
@@ -85,7 +85,7 @@
                     <div [hidden]="!mobileShow" class="error_message">
                         This field is required
                     </div>
-                </div>    
+                </div>
             </div>
             <div class="second_row">
                 <div class="email_section">
@@ -99,7 +99,10 @@
                 </div>
                 <div class="subject_section">
                     <input type="text" placeholder="Subject" class="text_box" (ngModel)="customerSubject" />
-                </div>    
+                  <div [hidden]="!subjectShow" class="error_message">
+                    This field is required
+                  </div>
+                </div>
             </div>
             <div class="message_box">
                 <textarea placeholder="Message" (ngModel)="customerMessage" class="text_area_box"
@@ -109,7 +112,7 @@
                     This field is required
                 </div>
             </div>
-            <div class="submit_button">
+            <div class="submit_button" (click)="formsubmit()">
                 <button type="button" class="submit_button_btn">
                     Submit
                 </button>
@@ -120,7 +123,7 @@
         </div>
     </div>
     <div class="empty_space"></div>
-  
+
     <div class="footer_section">
         <app-footer></app-footer>
     </div>

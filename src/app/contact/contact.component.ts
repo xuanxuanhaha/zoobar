@@ -13,12 +13,13 @@ export class ContactComponent implements OnInit {
   customerSubject: any = '';
   customerMessage: any = '';
 
-  nameShow: any = true;
+  nameShow: any = false;
   emailShow: any = false;
   mobileShow: any = false;
   invalidEmail: any = false;
   enquiryMessageShow: any = false;
-  bigErrorShow: any = true;
+  subjectShow: any = false;
+  bigErrorShow: any = false;
 
   constructor() { }
 
@@ -28,6 +29,39 @@ export class ContactComponent implements OnInit {
   scrollDown() {
     const idSpace = document.getElementById('enquiry_section');
     idSpace.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest' });
+  }
+
+  formsubmit(){
+    if(!this.customerEmail){
+      this.emailShow = true;
+    }else{
+      this.emailShow = false;
+    }
+
+    if(!this.customerName){
+      this.nameShow = true;
+    }else{
+      this.nameShow = false;
+    }
+
+    if(!this.customerMobile){
+      this.mobileShow = true;
+    }else{
+      this.mobileShow = false;
+    }
+
+    if(!this.customerSubject){
+      this.subjectShow = true;
+    }else{
+      this.subjectShow = false;
+    }
+
+    if(!this.customerMessage){
+      this.enquiryMessageShow = true;
+    }else{
+      this.enquiryMessageShow = false;
+    }
+
   }
 
 }
