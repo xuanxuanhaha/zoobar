@@ -55,4 +55,7 @@ export class NavbarComponent implements OnInit {
   goToLunch(){
 
   }
+  goToMenu() {
+    this.router.navigateByUrl('/menu');
+  }
 }
