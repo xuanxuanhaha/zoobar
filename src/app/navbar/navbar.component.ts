@@ -27,5 +27,31 @@ export class NavbarComponent implements OnInit {
   goToNightClub() {
     this.router.navigateByUrl('/nightclub');
   }
+  goToZooBar(){
+    this.router.navigateByUrl('/overview');
+  }
+  goToHustler(){
+    this.router.navigateByUrl('/hustler');
+  }
+  goToAbout(){
+    this.router.navigateByUrl('/about');
+  }
+  goToCorporate(){
+    this.router.navigateByUrl('/corporate');
+  }
+  goToFunction(){
 
+  }
+  goToMenu(){
+    this.router.navigateByUrl('/menu');
+  }
+  goToDrink(){
+    this.router.navigateByUrl('/drink');
+  }
+  goToPackage(){
+
+  }
+  goToWhatsOn(){
+
+  }
 }

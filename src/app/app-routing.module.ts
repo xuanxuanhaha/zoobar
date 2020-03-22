@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: '', component: AboutComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'zoobargrill', component: ZoobargrillComponent},
+  {path: 'overview', component: ZoobargrillComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'nightclub', component: NightclubComponent},
   {path: 'drink', component: DrinkComponent},

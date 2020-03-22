@@ -16,31 +16,31 @@
 }
 #about{
   color: white;
-  background: transparent;height: 100px;padding-top: 40px;
+  background: transparent;height: 100px;padding-top: 40px;cursor: pointer
 }
 #zoobargrill{
   color: white;
-  background: transparent;height: 100px;padding-top: 40px;
+  background: transparent;height: 100px;padding-top: 40px;cursor: pointer
 }
 #hustler{
   color: white;
-  background: transparent;height: 100px;padding-top: 40px;
+  background: transparent;height: 100px;padding-top: 40px;cursor: pointer
 }
 #corporate{
   color: white;
-  background: transparent;height: 100px;padding-top: 40px;
+  background: transparent;height: 100px;padding-top: 40px;cursor: pointer
 }
 #nightclub{
   color: white;
-  background: transparent;height: 100px;padding-top: 40px;
+  background: transparent;height: 100px;padding-top: 40px;cursor: pointer
 }
 #functionevent{
   color: white;
-  background: transparent;height: 100px;padding-top: 40px;
+  background: transparent;height: 100px;padding-top: 40px;cursor: pointer
 }
 #contact{
   color: white;
-  background: transparent;height: 100px;padding-top: 40px;
+  background: transparent;height: 100px;padding-top: 40px;cursor: pointer
 }
 
 .listofnavbar{
@@ -81,4 +81,13 @@
 }
 .navbar-nav{
   height:100px;padding-top:0px
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-item{
+  cursor: pointer;
+}
+.dropdown-item:hover{
+  color: cadetblue;
 }
