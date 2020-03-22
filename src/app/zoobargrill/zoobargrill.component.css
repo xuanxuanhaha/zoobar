@@ -88,14 +88,14 @@
   object-fit:cover;
 }
 .firstleftphoto{
-  width: 33.333%;
-  height: 50vh;
-  object-fit: cover;
+  width:33.333%;
+  height:50vh;
+  object-fit:cover;
 }
 .firstrightphoto{
-  width: 33.333%;
-  height: 50vh;
-  object-fit: cover;
+  width:33.333%;
+  height:50vh;
+  object-fit:cover;
 }
 
 .big{

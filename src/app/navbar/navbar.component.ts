@@ -54,4 +54,7 @@ export class NavbarComponent implements OnInit {
   goToWhatsOn(){
 
   }
+  goToLunch(){
+
+  }
 }
