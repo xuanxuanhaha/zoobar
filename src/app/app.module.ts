@@ -15,6 +15,7 @@ import { MenuComponent } from './menu/menu.component';
 import { DrinkComponent } from './drink/drink.component';
 import { HustlerComponent } from './hustler/hustler.component';
 import { CorporateComponent } from './corporate/corporate.component';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { CorporateComponent } from './corporate/corporate.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

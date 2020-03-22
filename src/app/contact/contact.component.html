@@ -75,13 +75,13 @@
         <div class="enquiry_body">
             <div class="first_row">
                 <div class="name_section">
-                    <input type="text" placeholder="Name" class="text_box" (ngModel)="customerName" />
+                    <input type="text" placeholder="Name" class="text_box" [(ngModel)]="customerName" />
                     <div [hidden]="!nameShow" class="error_message">
                         This field is required
                     </div>
                 </div>
                 <div class="mobile_section">
-                    <input type="text" placeholder="Mobile" class="text_box" (ngModel)="customerMobile" />
+                    <input type="text" placeholder="Mobile" class="text_box" [(ngModel)]="customerMobile" />
                     <div [hidden]="!mobileShow" class="error_message">
                         This field is required
                     </div>
@@ -89,7 +89,7 @@
             </div>
             <div class="second_row">
                 <div class="email_section">
-                    <input type="text" placeholder="Email" class="text_box" (ngModel)="customerEmail" />
+                    <input type="text" placeholder="Email" class="text_box" [(ngModel)]="customerEmail" />
                     <div [hidden]="!emailShow" class="error_message">
                         This field is required
                     </div>
@@ -98,14 +98,14 @@
                     </div>
                 </div>
                 <div class="subject_section">
-                    <input type="text" placeholder="Subject" class="text_box" (ngModel)="customerSubject" />
+                    <input type="text" placeholder="Subject" class="text_box" [(ngModel)]="customerSubject" />
                   <div [hidden]="!subjectShow" class="error_message">
                     This field is required
                   </div>
                 </div>
             </div>
             <div class="message_box">
-                <textarea placeholder="Message" (ngModel)="customerMessage" class="text_area_box"
+                <textarea placeholder="Message" [(ngModel)]="customerMessage" class="text_area_box"
                 rows="10" cols="0">
                 </textarea>
                 <div [hidden]="!enquiryMessageShow" class="error_message">

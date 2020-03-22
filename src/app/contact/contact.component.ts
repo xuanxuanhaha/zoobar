@@ -10,7 +10,7 @@ export class ContactComponent implements OnInit {
   customerName: any = '';
   customerEmail: any = '';
   customerMobile: any = '';
-  customerSubject: any = '';
+  customerSubject: any;
   customerMessage: any = '';
 
   nameShow: any = false;
@@ -32,11 +32,21 @@ export class ContactComponent implements OnInit {
   }
 
   formsubmit(){
+    console.log(this.customerSubject);
     if(!this.customerEmail){
       this.emailShow = true;
     }else{
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.customerEmail))
+      {
+        this.invalidEmail = false;
+      }else{
+        this.invalidEmail = true;
+      }
       this.emailShow = false;
     }
+
+
+
 
     if(!this.customerName){
       this.nameShow = true;
