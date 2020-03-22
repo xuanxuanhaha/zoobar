@@ -76,6 +76,7 @@
 }
 .contentwords{
   font-size: 1.5vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
+  font-weight: 400;
 }
 .secondrightphoto {
   width:66.666%;
