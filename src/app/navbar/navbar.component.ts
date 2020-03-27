@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     // document.getElementById('about').style.color = 'white';
@@ -19,4 +20,42 @@ export class NavbarComponent implements OnInit {
     // document.getElementById('contact').style.color = 'white';
   }
 
+  goToContact() {
+    this.router.navigateByUrl('/contact');
+  }
+
+  goToNightClub() {
+    this.router.navigateByUrl('/nightclub');
+  }
+  goToZooBar(){
+    this.router.navigateByUrl('/overview');
+  }
+  goToHustler(){
+    this.router.navigateByUrl('/hustler');
+  }
+  goToAbout(){
+    this.router.navigateByUrl('/about');
+  }
+  goToCorporate(){
+    this.router.navigateByUrl('/corporate');
+  }
+  goToFunction() {
+    this.router.navigateByUrl('/function-event');
+  }
+
+  goToDrink(){
+    this.router.navigateByUrl('/drink');
+  }
+  goToPackage(){
+
+  }
+  goToWhatsOn(){
+
+  }
+  goToLunch(){
+
+  }
+  goToMenu() {
+    this.router.navigateByUrl('/menu');
+  }
 }

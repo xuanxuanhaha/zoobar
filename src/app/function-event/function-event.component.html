@@ -1,0 +1,95 @@
+
+    <div class="header_include">
+        <app-navbar></app-navbar>
+    </div>
+    <div class="actual_body">
+        <div class="logo_space">
+<!--            <img class="logo_image" src="./../../assets/general/Zoo_Monogram_Gold.png" />-->
+<!--        </div>-->
+<!--        <div class="first_section">-->
+<!--                <img class="monkey_bg" src="./../../assets/function_event/IMG_6788.jpg">-->
+<!--                <div class="textual_section">-->
+<!--                    <h1 class="bigwording_t">-->
+<!--                        WELCOME TO <br>-->
+<!--                        FUNCTION & EVENT-->
+<!--                    </h1>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <h3 class="smallwording_t">-->
+<!--                        The urban vibed Hustler Lounge with pool tables, arcade games, and bar.-->
+<!--                    </h3>-->
+<!--                </div>-->
+<!--        </div>-->
+
+
+      <!--content start-->
+      <div>
+        <div>
+          <img class="big" src="./../../assets/function_event/IMG_6788.jpg" alt="horse" >
+          <!--transparent grey background and wording-->
+          <div style="width: 43%;height: auto;background: rgba(	52, 62, 71,0.5);position: absolute;top: 200px;color: white;padding:70px 30px 70px 10px">
+            <b class="title" >
+              WELCOME TO
+            </b>
+            <br>
+            <b class="title">
+              FUNCTION & EVENT
+            </b>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="contentwords">
+              The urban vibed Hustler Lounge with pool tables, arcade games, and bar.
+            </p>
+            <br>
+            <br>
+          </div>
+
+        </div>
+      </div>
+
+
+        <div class="second_section">
+            <div class="second_first_half">
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+                    <ng-template ngbSlide *ngFor="let img of images; index as i">
+                        <!--  Description for images can be added here -->
+                        <div class="carousel-caption">
+                            <h3></h3>
+                        </div>
+                        <!-- End of description-->
+                        <div class="pics">
+                            <img [src]="img"  class="tower_image"
+                            alt="Birthday Party">
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div class="second_second_half">
+                <div class="second_second_first_row">
+                    <div class="second_second_first_row_second">
+                        <div class="textual_section_second">
+                            <h1 class="bigwording_second">
+                               INTRODUCTION
+                            </h1>
+                            <br>
+                            <br>
+                            <div class="smallwording_second">
+                                <div class="shrink" style="font-size: 18px">
+                                    The urban vibed Hustler Lounge with pool tables, arcade games, and bar.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second_second_second_row">
+                    <img src="./../../assets/function_event/IMG_6751.jpg" class="second_tower_image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer_include">
+    <app-footer></app-footer>
+</div>
