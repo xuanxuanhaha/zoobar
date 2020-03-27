@@ -75,7 +75,7 @@
   font-size: 3.7vw;text-align: center;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;
 }
 .contentwords{
-  font-size: 1.6vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
+  font-size: 1.4vw;text-align: left;text-shadow: 1px 1px 1px rgb(100,100,100);padding-left: 10%;margin-top: -15px;
   font-weight: 300;
 }
 .secondrightphoto {
@@ -115,11 +115,17 @@
   height: 100vh;
   object-fit: cover;
 }
-.smallwording{
-  font-weight: 400;
-}
+
 .title {
   font-family: Oswald;
+}
+.contentwords{
+  font-family:  Roboto-Slab;
+}
+.smallwording{
+  font-family: Roboto-Slab;
+  font-size: 18px;
+  font-weight: 400;
 }
 .bigwording{
   font-family: Oswald;
