@@ -45,9 +45,6 @@ export class ContactComponent implements OnInit {
       this.emailShow = false;
     }
 
-
-
-
     if(!this.customerName){
       this.nameShow = true;
     }else{
