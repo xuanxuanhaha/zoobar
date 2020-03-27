@@ -91,3 +91,7 @@
 .dropdown-item:hover{
   color: cadetblue;
 }
+
+* {
+  font-family: Oswald;
+}
