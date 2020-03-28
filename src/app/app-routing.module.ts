@@ -7,7 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {ZoobargrillComponent} from './zoobargrill/zoobargrill.component';
 import {MenuComponent} from './menu/menu.component';
 import {NightclubComponent} from './nightclub/nightclub.component';
-import {FunctionEventComponent} from './function-event/function-event.component'; 
+import {FunctionEventComponent} from './function-event/function-event.component';
 import {DrinkComponent} from './drink/drink.component';
 import {HustlerComponent} from './hustler/hustler.component';
 import {CorporateComponent} from './corporate/corporate.component';
@@ -26,7 +26,7 @@ const routes: Routes = [
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'}),
     FormsModule,
     CommonModule
   ],

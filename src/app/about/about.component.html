@@ -1,8 +1,12 @@
-<div style="position: fixed;z-index: 1000">
+<div     class="search-results"
+         infiniteScroll
+         (scrolled)="onScrollDown()"
+         (scrolledUp)="onScrollUp()">
+<div  style="position: fixed;z-index: 1000">
   <app-navbar></app-navbar>
 </div>
 <!--content start-->
-<div>
+<div id="toppart">
   <div>
     <img class="big" src="./../../assets/AboutPage/home-first-image-horse.jpg" alt="horse" >
     <!--transparent grey background and wording-->
@@ -32,7 +36,7 @@
 
 
 <!--four background images-->
-<div class="row" style="width: 100%;margin-left: 0;margin-top: -1px">
+<div id="secondhalf" class="row" style="width: 100%;margin-left: 0;margin-top: -1px">
   <img class="lefttop" src="./../../assets/AboutPage/home-second-lefttop.jpg" alt="dishes" >
   <img class="righttop" src="./../../assets/AboutPage/home-second-righttop.jpg" alt="dishes" >
   <img class="leftbottom" src="./../../assets/AboutPage/home-second-leftbottom.JPG" alt="dishes" >
@@ -121,5 +125,7 @@
 </div>
 
 
-
+<div id="thirdhalf">
 <app-footer></app-footer>
+</div>
+</div>
