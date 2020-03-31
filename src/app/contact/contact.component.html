@@ -1,7 +1,13 @@
+<div style="position: fixed;z-index: 1000; top: 0">
+  <app-navbar></app-navbar>
+</div>
+
 <!-- Injecting a max width -->
 <div class="whole_contact_body">
-    <app-navbar></app-navbar>
+<!--    <app-navbar></app-navbar>-->
     <div class="empty_space"></div>
+  <div class="empty_space"></div>
+  <div class="empty_space"></div>
     <div class="title_section">
         <div class="title_body">
             <div class="title_contact">
@@ -16,7 +22,7 @@
         <div class="empty_area"></div>
         <div class="left_text_section">
             <div class="location_area">
-                <div class="left_location_title">
+                <div class="left_location_title contenttitle">
                     Location
                 </div>
                 <div class="actual_address">
@@ -29,7 +35,7 @@
                 </div>
             </div>
             <div class="phone_area">
-                <div class="phone_title">
+                <div class="phone_title contenttitle">
                     Phone
                 </div>
                 <div class="phone_number">
@@ -37,7 +43,7 @@
                 </div>
             </div>
             <div class="opening_hours">
-                <div class="opening_hour_title">
+                <div class="opening_hour_title contenttitle">
                     Opening Hour
                 </div>
                 <div class="opening_hours_duration">
@@ -51,14 +57,14 @@
                 </div>
             </div>
             <div class="enquire_button">
-                <button type="button" class="enquire_button_btn" (click)="scrollDown()">
+                <button type="button" class="enquire_button_btn contenttitle" (click)="scrollDown()">
                     Enquire
                 </button>
             </div>
         </div>
         <div class="right_map_section">
             <!-- MAP AREA -->
-            <div class="mapouter">
+            <div class="mapouter" style="z-index: -1">
                 <div class="gmap_canvas">
                     <iframe width="750" height="500" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=zoobar+and+gril&oq=zoobar+and+gril&aqs=chrome..69i57j0l7.2697j0j7&sourceid=chrome&ie=UTF-8&iwloc=&output=embed"
@@ -69,7 +75,7 @@
         </div>
     </div>
     <div class="enquiry_section" id="enquiry_section">
-        <div class="enquiry_heading">
+        <div class="enquiry_heading contenttitle">
             ENQUIRES
         </div>
         <div class="enquiry_body">
@@ -113,9 +119,11 @@
                 </div>
             </div>
             <div class="submit_button" (click)="formsubmit()">
-                <button type="button" class="submit_button_btn">
+                <button type="button" class="enquire_button_btn">
                     Submit
                 </button>
+
+
                 <div class="big_error_message" [hidden]="!bigErrorShow">
                     One or more fields have an error. Please check and try again.
                 </div>
@@ -128,3 +136,4 @@
         <app-footer></app-footer>
     </div>
 </div>
+

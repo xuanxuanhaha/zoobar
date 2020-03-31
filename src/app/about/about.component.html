@@ -1,8 +1,12 @@
-<div style="position: fixed;z-index: 1000">
+<div     class="search-results"
+         infiniteScroll
+         (scrolled)="onScrollDown()"
+         (scrolledUp)="onScrollUp()">
+<div  style="position: fixed;z-index: 1000">
   <app-navbar></app-navbar>
 </div>
 <!--content start-->
-<div>
+<div id="toppart">
   <div>
     <img class="big" src="./../../assets/AboutPage/home-first-image-horse.jpg" alt="horse" >
     <!--transparent grey background and wording-->
@@ -20,14 +24,8 @@
       <br>
       <p class="contentwords">
         Our Multi Level venue has all to offer, starting
-      </p>
-      <p class="contentwords">
         from ground level with our funky bar & grill. With
-      </p>
-      <p class="contentwords">
         a diverse range of food, drinks and culture, Zoo
-      </p>
-      <p class="contentwords">
         Bar & Grill is your entertainment destination.
       </p>
     </div>
@@ -38,7 +36,7 @@
 
 
 <!--four background images-->
-<div class="row" style="width: 100%;margin-left: 0;margin-top: -1px">
+<div id="secondhalf" class="row" style="width: 100%;margin-left: 0;margin-top: -1px">
   <img class="lefttop" src="./../../assets/AboutPage/home-second-lefttop.jpg" alt="dishes" >
   <img class="righttop" src="./../../assets/AboutPage/home-second-righttop.jpg" alt="dishes" >
   <img class="leftbottom" src="./../../assets/AboutPage/home-second-leftbottom.JPG" alt="dishes" >
@@ -53,12 +51,12 @@
           </b>
           <hr style="border: 2px solid white;width: 20%">
           <div style="width: 80%;margin-left: 10%">
-          <b class="smallwording" style="padding: 0;font-size: 20px">
+          <b class="smallwording" style="padding: 0;">
             ZOO BAR & GRILL creates an enchanting experience keeping the urban lifestyle alive in the heart of the city.
           </b>
             <br>
             <br>
-            <button class="btn" style="background: transparent;color: white;border: 2px solid white;width:40%;font-size: 20px;text-align: center">More</button>
+            <button class="btn" style="background: transparent;color: white;border: 2px solid white;width:40%;font-size: 20px;text-align: center" [routerLink]="['/overview']">More</button>
           </div>
 
   </div>
@@ -67,19 +65,19 @@
 <!--right top corporate-->
 <div style="position: absolute;top: 100vh;left: 50%;width: 25%">
   <div style="position: absolute;background: #f8604b;width:100%;height: 40vh;color: white;padding: 3%;text-align: center">
-    <b class="bigwording" style="z-index: 0;font-size: 30px;">
+<!--    <b style="z-index: 0;font-size: 30px;">-->
             <b class="bigwording" style="z-index: 0;font-size: 30px;text-align: center">
               HUSTLER
             </b>
             <hr style="border: 2px solid white;width: 20%">
             <div style="width: 80%;margin-left: 10%">
-              <b class="smallwording" style="padding: 0;font-size: 20px">
+              <b class="smallwording" style="padding: 0;">
                 The urban vibed Hustler Lounge with pool tables, arcade games, and bar.
               </b>
-              <div style="height: 30px"></div>
-              <button class="btn" style="background: transparent;color: white;border: 2px solid white;width:40%;font-size: 20px;text-align: center">More</button>
+              <div style="height: 20px"></div>
+              <button class="btn" style="background: transparent;color: white;border: 2px solid white;width:40%;font-size: 20px;text-align: center" [routerLink]="['/hustler']">More</button>
             </div>
-    </b>
+<!--    </b>-->
   </div>
 </div>
 
@@ -91,12 +89,12 @@
             </b>
             <hr style="border: 2px solid white;width: 20%">
             <div style="width: 100%;">
-              <b class="smallwording" style="padding: 0;font-size: 20px">
+              <b class="smallwording" style="padding: 0;">
                 Enjoy our function spaces offering a panoramic view of the city where you will find everything you need to create your perfect event.
               </b>
               <br>
               <br>
-              <button class="btn" style="background: transparent;color: white;border: 2px solid white;width:40%;font-size: 20px;text-align: center">More</button>
+              <button class="btn" style="background: transparent;color: white;border: 2px solid white;width:40%;font-size: 20px;text-align: center" [routerLink]="['/corporate']">More</button>
             </div>
   </div>
 </div>
@@ -109,15 +107,18 @@
               NIGHTCLUB
             </b>
             <hr style="border: 2px solid white;width: 20%">
-            <div style="width: 80%;margin-left: 10%">
-              <b class="smallwording" style="padding: 0;font-size: 20px">
-                Coming Soon
+            <div style="width: 100%;">
+              <b class="smallwording" style="padding: 0;">
+                Stay tuned
+              </b>
+<br>
+              <b class="smallwording" style="padding: 0;">
+                All event enquires are welcomed
               </b>
               <br>
               <br>
               <br>
-              <br>
-              <button class="btn" style="background: transparent;color: white;border: 2px solid white;width:40%;font-size: 20px;text-align: center">More</button>
+              <button class="btn" style="background: transparent;color: white;border: 2px solid white;width:40%;font-size: 20px;text-align: center" [routerLink]="['/nightclub']">More</button>
               <br>
               <br>
               <br>
@@ -127,5 +128,7 @@
 </div>
 
 
-
+<div id="thirdhalf">
 <app-footer></app-footer>
+</div>
+</div>

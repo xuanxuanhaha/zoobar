@@ -170,7 +170,7 @@
 }
 
 .enquiry_section {
-    margin-top: 15%;
+    margin-top: 100px;
     width: 100%;
     color: white;
 }
@@ -640,4 +640,13 @@
     }
 
 
+}
+*{
+  font-family: Oswald;
+}
+.title_contact{
+  font-family: Oswald;
+}
+.contenttitle{
+  font-family: Oswald;
 }
