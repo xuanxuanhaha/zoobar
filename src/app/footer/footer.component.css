@@ -13,8 +13,13 @@
   color: white;
   border-radius: 5px;
 }
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .fa{
-  padding: 3%;
+  padding: 2%;
   margin-right: 10px;
 }
 .footer-content{
