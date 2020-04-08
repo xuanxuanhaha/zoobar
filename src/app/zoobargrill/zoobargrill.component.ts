@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-zoobargrill',
@@ -7,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ZoobargrillComponent implements OnInit {
 
-  constructor() { }
+  globalListen: any;
+
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
+    // TODO: Animation effect
     window.scrollTo(0, 0);
+    this.globalListen = this.renderer.listen('document', 'keydown', e => {
+      if (e.key === 'ArrowDown') {
+        this.scrollNext();
+      }
+      // console.log('a' + e.key);
+    });
   }
+
+  scrollNext() {
+    document.getElementById('first_id').style.top = '1000px';
+
+  }
+
+
 
 }
