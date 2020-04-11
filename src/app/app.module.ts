@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import {RouterModule} from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { ZoobargrillComponent } from './zoobargrill/zoobargrill.component';
 import { FunctionEventComponent } from './function-event/function-event.component';
@@ -17,6 +18,7 @@ import { DrinkComponent } from './drink/drink.component';
 import { HustlerComponent } from './hustler/hustler.component';
 import { CorporateComponent } from './corporate/corporate.component';
 import {FormsModule} from '@angular/forms';
+import { SendDataService } from './send-data.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,9 +38,10 @@ import {FormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SendDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SendDataService } from '../send-data.service';
 
 @Component({
   selector: 'app-contact',
@@ -21,7 +22,10 @@ export class ContactComponent implements OnInit {
   subjectShow: any = false;
   bigErrorShow: any = false;
 
-  constructor() { }
+  submitBut: any = 'Submit';
+  showSuccessMessage: any = false;
+
+  constructor(private sendData: SendDataService) { }
 
   ngOnInit(): void {
   }
@@ -31,44 +35,84 @@ export class ContactComponent implements OnInit {
     idSpace.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
 
-  formsubmit(){
-    console.log(this.customerSubject);
-    if(!this.customerEmail){
+  formsubmit() {
+    this.bigErrorShow = false;
+    this.showSuccessMessage = false;
+
+    if (!this.customerEmail) {
       this.emailShow = true;
-    }else{
-      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.customerEmail))
-      {
+    } else {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.customerEmail)) {
         this.invalidEmail = false;
-      }else{
+      } else {
         this.invalidEmail = true;
       }
       this.emailShow = false;
     }
 
-    if(!this.customerName){
+    if (!this.customerName) {
       this.nameShow = true;
-    }else{
+    } else {
       this.nameShow = false;
     }
 
-    if(!this.customerMobile){
+    if (!this.customerMobile) {
       this.mobileShow = true;
-    }else{
+    } else {
       this.mobileShow = false;
     }
 
-    if(!this.customerSubject){
+    if (!this.customerSubject){
       this.subjectShow = true;
-    }else{
+    } else {
       this.subjectShow = false;
     }
 
-    if(!this.customerMessage){
+    if (!this.customerMessage) {
       this.enquiryMessageShow = true;
-    }else{
+    } else {
       this.enquiryMessageShow = false;
     }
 
+    if (this.emailShow || this.invalidEmail || this.nameShow || this.mobileShow || this.subjectShow || 
+      this.enquiryMessageShow) {
+        this.bigErrorShow = true;
+    }
+    if (!this.bigErrorShow) {
+      /*
+      * Including the collected data as JSON-object
+      */
+      const jsonData = {
+        name: this.customerName,
+        mobile: this.customerMobile,
+        email: this.customerEmail,
+        subject: this.customerSubject,
+        message : this.customerMessage
+      };
+
+      this.sendData.sendEmail(jsonData).subscribe(data => {
+        if (data !== '' && data !== null && data.toString().includes('success')) {
+          this.resetAllValues();
+          this.bigErrorShow = false;
+          this.showSuccessMessage = true;
+        } else {
+          this.showSuccessMessage = false;
+          this.bigErrorShow = true;
+        }
+      }, error => {
+        this.showSuccessMessage = false;
+        this.bigErrorShow = true;
+      });
+      this.submitBut = 'Submit';
+    }
+    this.submitBut = 'Submit';
   }
 
+  resetAllValues() {
+    this.customerEmail    = '';
+    this.customerName     = '';
+    this.customerMobile   = '';
+    this.customerSubject  = '';
+    this.customerMessage  = '';
+  }
 }

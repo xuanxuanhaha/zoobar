@@ -120,13 +120,18 @@
             </div>
             <div class="submit_button" (click)="formsubmit()">
                 <button type="button" class="enquire_button_btn">
-                    Submit
+                    {{submitBut}}
                 </button>
 
 
                 <div class="big_error_message" [hidden]="!bigErrorShow">
                     One or more fields have an error. Please check and try again.
                 </div>
+
+                <div class="success_message" [hidden]="!showSuccessMessage">
+                    &#10003; Thanks for submitting your enquiry. We will get in touch with you very soon.
+                </div>
+
             </div>
         </div>
     </div>
