@@ -22,7 +22,7 @@
 .regular-wrapper{
   margin-top: 0;
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   padding-top: 20vh;
   background-image:
     url("./../../assets/AboutPage/home-second-rightbottom.jpg"),
@@ -40,7 +40,7 @@
 .regular-wrapper1{
   margin-top: 0;
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   padding-top: 20vh;
   background-image:
     /*url("./../../assets/AboutPage/home-second-lefttop.jpg"),*/
@@ -84,22 +84,22 @@
 }
 .secondrightphoto {
   width:66.666%;
-  height:50vh;
+  height:65vh;
   object-fit:cover;
 }
 .thirdleftphoto{
   width:66.666%;
-  height:50vh;
+  height:65vh;
   object-fit:cover;
 }
 .firstleftphoto{
   width:33.333%;
-  height:50vh;
+  height:65vh;
   object-fit:cover;
 }
 .firstrightphoto{
   width:33.333%;
-  height:50vh;
+  height:65vh;
   object-fit:cover;
 }
 
@@ -129,7 +129,7 @@
   animation-direction: normal;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: backwards; 
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
 }
 .title {
