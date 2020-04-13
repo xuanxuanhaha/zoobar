@@ -89,7 +89,7 @@
   cursor: pointer;
 }
 .dropdown-item:hover{
-  color: cadetblue;
+  color: rgba(118, 135, 111,1);
 }
 
 * {

@@ -43,8 +43,9 @@
 
 <!--First line middle word nightclub-->
 <div style="position: absolute;top: 100vh;left: 33.333%;width: 33.333%">
-  <div style="position: absolute;background: rgba(46,139,87,1);width:100%;height: 65vh;text-align: center;color: white;padding: 10%">
-
+  <div style="position: absolute;background: rgba(46,139,87,1);width:100%;height: 65vh;text-align: center;color: white;display: table;padding-left: 10%;padding-right: 10%">
+    <div style="height: auto;margin: auto;display: table-cell;
+    vertical-align: middle;">
         <h1 class="contenttitle">INTRODUCTION</h1>
           <br>
         <p style="font-size: 20px">
@@ -55,6 +56,7 @@
           With a diverse range of food, drinks and culture, Zoo Bar & Grill is your entertainment destination.
         </p>
           <br>
+    </div>
   </div>
 </div>
 
@@ -69,8 +71,9 @@
 
 <!--Second line middle word nightclub-->
 <div style="position: absolute;top: 165vh;left: 0;width: 33.333%">
-  <div style="position: absolute;background: rgba(46,139,87,1);width:100%;height: 65vh;text-align: center;color: white;padding: 10%">
-
+  <div style="position: absolute;background: rgba(46,139,87,1);width:100%;height: 65vh;text-align: center;color: white;padding-left: 10%;padding-right: 10%;display: table">
+    <div style="height: auto;margin: auto;display: table-cell;
+    vertical-align: middle;">
         <h1 class="contenttitle">MENU</h1>
         <hr style="border: 2px solid white;width: 80px">
         <p style="font-size: 20px">
@@ -82,7 +85,8 @@
         </p>
         <br>
         <button class="btn" [routerLink]="['/menu']" style="border: 2px solid white;border-radius: 0;background: transparent;font-size: 20px;color: white;width: 120px">Menu</button>
-  </div>
+    </div>
+    </div>
 </div>
 
 
@@ -108,8 +112,10 @@
 
 <!--Second line middle word nightclub-->
 <div style="position: absolute;top: 230vh;left: 66.666%;width: 33.333%">
-  <div style="position: absolute;background: rgba(46,139,87,1);width:100%;height: 65vh;text-align: center;color: white;padding: 10%;margin-top: -1px">
-          <h1 class="contenttitle">DRINKS</h1>
+  <div style="position: absolute;background: rgba(46,139,87,1);width:100%;height: 65vh;text-align: center;color: white;padding-left: 10%;margin-top: -1px;padding-right: 10%;display: table">
+    <div style="height: auto;margin: auto;display: table-cell;
+    vertical-align: middle;">
+    <h1 class="contenttitle">DRINKS</h1>
           <hr style="border: 2px solid white;width: 80px">
           <p style="font-size: 18px">
 
@@ -118,6 +124,7 @@
           </p>
           <br>
           <button class="btn" [routerLink]="['/drink']" style="border: 2px solid white;border-radius: 0;background: transparent;font-size: 20px;color: white;width: 120px">Drinks</button>
+  </div>
   </div>
 </div>
 <app-footer></app-footer>
