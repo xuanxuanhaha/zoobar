@@ -30,40 +30,44 @@
 
 }
 
-.first_image, .second_image, .third_image, .fourth_image {
-    flex-basis: 25%;
+.first_image {
+    flex-basis: 100%;
     height: 100%;
     flex-direction: column;
 }
 
 .nightclub_image {
-    position: absolute;
+    /*position: absolute;*/
     z-index: -1;
-    width: 25%;
-    height: auto;
-    min-height: 100%;
+    /*width: 25%;*/
+    /*height: 100vh;*/
     background-position: cover;
     background-size: cover;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.45),
-        rgba(0, 0, 0, 0.45)
-    );
-    object-fit: cover;
-
+    /*background: linear-gradient(*/
+    /*    rgba(0, 0, 0, 0.45),*/
+    /*    rgba(0, 0, 0, 0.45)*/
+    /*);*/
+    /*object-fit: cover;*/
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .text_words {
-    z-index: 2;
+    z-index: 999;
+    position: absolute;
     color: white;
     font-family: 'Roboto Condensed' sans-serif;
     background: transparent;
-    text-align: center;
-    margin-top: 25%;
+    width: 100%;
+    height: 60vh;
+  top: 32%;
     flex-wrap: wrap;
 }
 .text_coming_soon_l {
     font-weight: bold;
     font-size: 70px;
+  text-align: center;
 }
 
 
