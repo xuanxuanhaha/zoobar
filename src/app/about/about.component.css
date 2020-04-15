@@ -90,22 +90,26 @@
 }
 
 .lefttop{
-  width: 50%;
+
+  width: 50vw;
   height: 60vh;
   object-fit: cover;
 }
 .righttop{
-  width: 50%;
+  margin-top: -20vh;
+  width: 50vw;
   height: 40vh;
   object-fit: cover;
 }
 .leftbottom{
-  width: 50%;
+
+  width: 50vw;
   height: 40vh;
   object-fit: cover;
 }
 .rightbottom{
-  width: 50%;
+
+  width: 50vw;
   height: 60vh;
   object-fit: cover;
   margin-top: -20vh;
