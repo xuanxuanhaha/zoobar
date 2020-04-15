@@ -16,11 +16,17 @@ const httpOptions = {
 export class SendDataService {
 
   urlHost = 'https://zoobarandgrill.com.au/php/email_zoobar.php';
+  urlUpload = 'https://zoobarandgrill.com.au/php/upload.php';
+  
   constructor(private http: HttpClient) {}
   /* 
    * @param data Sending email service
    */
   sendEmail(data): Observable<any> {
     return this.http.post<any>(this.urlHost, data, httpOptions);
+  }
+
+  sendData(): Observable<any> {
+    return this.http.post<any>(this.urlUpload, {}, httpOptions);
   }
 }

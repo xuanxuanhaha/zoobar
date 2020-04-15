@@ -20,4 +20,13 @@ function to_address_name() {
     return 'Sarveshwaran Rajarajan';
 }
 
+function get_path() {
+    $id = 1;
+    if ($id == 0) {
+        return '/home/sarveshwaran/ancc/ancc_individual/ancc/functional_flyer.pdf';
+    } else if ($id == 1) {
+        return '/home/zoobarandgrill/public_html/assets/functional_flyer.pdf';
+    }
+}
+
 ?>

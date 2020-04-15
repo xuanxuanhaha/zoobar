@@ -19,6 +19,10 @@ import { HustlerComponent } from './hustler/hustler.component';
 import { CorporateComponent } from './corporate/corporate.component';
 import {FormsModule} from '@angular/forms';
 import { SendDataService } from './send-data.service';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,14 +36,17 @@ import { SendDataService } from './send-data.service';
     MenuComponent,
     DrinkComponent,
     HustlerComponent,
-    CorporateComponent
+    CorporateComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    ModalModule.forRoot(),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    PdfViewerModule,
+
   ],
   providers: [SendDataService],
   bootstrap: [AppComponent]

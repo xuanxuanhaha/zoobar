@@ -12,4 +12,8 @@ export class CorporateComponent implements OnInit {
   ngOnInit() {
   }
 
+  openNewTab() {
+    window.open('/assets/functional_flyer.pdf', 'popup', 'width=600,height=600');
+  }
+
 }

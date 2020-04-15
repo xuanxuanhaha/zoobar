@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import { SendDataService } from '../send-data.service';
+
 
 @Component({
   selector: 'app-navbar',
@@ -8,16 +10,11 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  pdfSrc: any = '';
+
+  constructor(private router: Router, private sendData: SendDataService) { }
 
   ngOnInit() {
-    // document.getElementById('about').style.color = 'white';
-    // document.getElementById('zoobargrill').style.color = 'white';
-    // document.getElementById('hustler').style.color = 'white';
-    // document.getElementById('corporate').style.color = 'white';
-    // document.getElementById('nightclub').style.color = 'white';
-    // document.getElementById('functionevent').style.color = 'white';
-    // document.getElementById('contact').style.color = 'white';
   }
 
   goToContact() {
@@ -46,13 +43,14 @@ export class NavbarComponent implements OnInit {
   goToDrink(){
     this.router.navigateByUrl('/drink');
   }
-  goToPackage(){
+  goToPackage() {
+    this.pdfSrc = 'https://zoobarandgrill.com.au/assets/functional_flyer.pdf';
+    window.open(this.pdfSrc, '_blank');
+  }
+  goToWhatsOn() {
 
   }
-  goToWhatsOn(){
-
-  }
-  goToLunch(){
+  goToLunch() {
 
   }
   goToMenu() {
