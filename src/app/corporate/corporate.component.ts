@@ -13,7 +13,7 @@ export class CorporateComponent implements OnInit {
   }
 
   openNewTab() {
-    window.open('/assets/functional_flyer.pdf', 'popup', 'width=600,height=600');
+    window.open('https://zoobarandgrill.com.au/assets/functional_flyer.pdf', 'popup', 'width=600,height=600');
   }
 
 }
