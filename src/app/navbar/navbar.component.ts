@@ -15,6 +15,26 @@ export class NavbarComponent implements OnInit {
   constructor(private router: Router, private sendData: SendDataService) { }
 
   ngOnInit() {
+    console.log(window.location.href);
+    const locationhref = window.location.href;
+    const locationhrefarray = locationhref.split('/');
+    console.log(locationhrefarray);
+    let ishustler = false;
+    for (let i = 0; i < locationhrefarray.length; i++){
+      if(locationhrefarray[i] === 'hustler'){
+        console.log('yes');
+        ishustler = true;
+      }
+    }
+    if(ishustler === true){
+      document.getElementById('showlogo').style.display = 'none';
+      document.getElementById('showhustler').style.right = '100px';
+    }else{
+      document.getElementById('showhustler').style.display = 'none';
+
+    }
+
+
   }
 
   goToContact() {
